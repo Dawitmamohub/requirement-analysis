@@ -68,6 +68,44 @@ Examples include:
 Use Case Diagrams illustrate the **interactions between system actors and system functionality**.  
 They help visualize system scope and clarify roles of users and external entities.  
 
+### Textual Representation (ASCII Diagram)
+For a quick overview, here is a textual representation of the booking system's use cases:
+                +---------------------------------------+
+                |        Booking System                 |
+                |                                       |
+                |  +-------------------+                |
+                |  |  Search Listings  |<----(Customer) |
+                |  +-------------------+                |
+                |                                       |
+                |  +-----------------+                  |
+                |  |   Book Listing  |<----(Customer)   |
+                |  +-----------------+                  |
+                |          |                            |
+                |          | <<include>>                |
+                |          V                            |
+                |  +----------------+                   |
+                |  |  Make Payment  |                   |
+                |  +----------------+                   |
+                |                                       |
+                |  +------------------+                 |
+                |  | Manage Bookings  |<----(Customer)  |
+                |  +------------------+                 |
+                |                                       |
+                |  +------------------+                 |
+                |  | Manage Listings  |<----(Admin)     |
+                |  +------------------+                 |
+                |                                       |
+                |  +---------------------+              |
+                |  | Manage User Accounts|<----(Admin)  |
+                |  +---------------------+              |
+                |                                       |
+                |  +-------------------+                |
+                |  | View System Reports|<----(Admin)   |
+                |  +-------------------+                |
+                |                                       |
+                +---------------------------------------+
+
+                
 ### Booking Management System Use Case Diagram:
 ![Booking System Use Case Diagram](./alx-booking-uc.png)
 
@@ -81,7 +119,7 @@ They ensure alignment between business goals, user expectations, and developer o
 - User can enter booking details and proceed to checkout.  
 - Payment is processed securely and successfully.  
 - User receives a confirmation message and email.  
-- The booking appears in the user’s booking history.  
+- The booking appears in the user's booking history.  
 
 These criteria ensure that the feature delivers real value and meets both functional and business requirements.  
 
@@ -92,5 +130,4 @@ These criteria ensure that the feature delivers real value and meets both functi
 - Comprehensive documentation with clear examples  
 - Use of diagrams to visualize requirements  
 - Professional, industry-standard practices  
-
 ---
